@@ -3,14 +3,21 @@
 ## Overview
 This Tableau dashboard provides insights into employee demographics, department distribution, performance ratings, salary distribution, and tenure. It's an interactive tool designed for HR managers to make data-driven decisions regarding workforce management.
 
-### Features
+## Features
 - **Employee Demographics**: View gender distribution, age groups, and education levels.
 - **Department Analysis**: Understand the distribution of employees across departments.
 - **Performance Metrics**: Compare employee performance across different education levels.
 - **Salary Insights**: Analyze salary distribution by gender, department, and age group.
 - **Geographic Distribution**: Visualize employee locations on a map.
 
-### Data Preparation
+## Technologies Used
+
+This project was developed using the following tools and technologies:
+
+- ![Excel](https://img.shields.io/badge/Microsoft%20Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white): For data preparation and analysis.
+- ![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white): For data visualization and dashboard creation.
+
+## Data Preparation
 - **Dataset**: `HumanResources.csv`
 - **Fields**: Includes personal details (name, gender, age), job information (department, title, hire date), education, salary, and location.
 - **Data Cleaning**:
@@ -18,28 +25,34 @@ This Tableau dashboard provides insights into employee demographics, department 
   - Created a "Full Name" field by concatenating first and last names.
   - Classified employees as "Hired" or "Terminated" based on termination date.
 
-### Visualizations
+## Visualizations
 1. **Overview Dashboard**:
-   - Line and area charts for active vs. terminated employees over time.
-   - Bar chart showing employee count by department.
-   - Pie chart for gender distribution.
-   - Education and performance correlation.
+   - **Employee Status Over Time**: Line and area charts for active vs. terminated employees.
+   - **Department Breakdown**: Bar chart showing employee count by department.
+   - **Demographics**: Pie chart for gender distribution, and stacked bar for education level by age group.
+   - **Education and Performance**: Bar chart with trend line showing performance ratings by education level.
+   - **Income Distribution**: Comparison of salary across gender and education levels, and average salary per department by age group.
+   - **Geographic Location**: Map showing employee distribution across states.
 
 2. **Detailed Employee List Dashboard**:
-   - Interactive list of employees with demographic, job role, and salary details.
-   - Filter by location, hire date, and department.
+   - Comprehensive list of employees with demographic, job role, and salary details.
+   - Interactive filters to drill down by location, department, or hire date.
 
-### Interactive Features
+## Interactive Features
 - **Global Filters**: Apply filters across the dashboard (gender, location, employment status).
-- **Clickable Visualizations**: Dynamic interactions for filtering data through chart clicks.
-- **Hover Details**: Tooltip details for in-depth information on data points.
+- **Clickable Visualizations**: Interactive segments in charts to filter related data across the dashboard.
+- **Hover Details**: Tooltips for detailed information on data points.
 
-### Challenges and Solutions
-- **Age Calculation**: Used DATEDIFF function to dynamically calculate employee age.
-- **Performance Ratings as Text**: Assigned a numerical scale for performance ratings to enable trend analysis.
-- **Combined Name Field**: Concatenated First Name and Last Name for simplified display.
+## Screenshots
+Here are some screenshots of the dashboard:
 
-### Getting Started
+### Overview Dashboard
+![Overview Dashboard](images/HR1.png)
+
+### Employee List Dashboard
+![Employee List Dashboard](images/HR2.png)
+
+## Getting Started
 1. **Download the Tableau Workbook**:
    - Download the `.twbx` file to explore the dashboard in Tableau.
 2. **Dataset**:
@@ -47,14 +60,13 @@ This Tableau dashboard provides insights into employee demographics, department 
 3. **Customizing Filters**:
    - Modify global filters to focus on specific demographics, locations, or performance metrics.
 
-### Screenshots
-Here are some screenshots of the dashboard:
+## Challenges and Solutions
+- **Age Calculation**: Used the DATEDIFF function in Tableau to dynamically calculate employee age.
+- **Performance Ratings as Text**: Assigned a numerical scale to text ratings to enable trend analysis.
+- **Combined Name Field**: Concatenated First Name and Last Name fields for easier reference in the dashboard.
 
-#### Overview
-![Overview Dashboard](images/HR1.png)
-
-#### Detailed Employee List
-![Employee List Dashboard](images/HR2.png)
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Conclusion
 The Human Resources Dashboard in Tableau provides a comprehensive view of workforce metrics, enabling HR teams to make informed, data-driven decisions. With interactive filters and visualizations, it offers flexibility to explore various HR insights efficiently.
