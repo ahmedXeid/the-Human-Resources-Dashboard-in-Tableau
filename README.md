@@ -56,8 +56,5 @@ Here are some screenshots of the dashboard:
 #### Detailed Employee List
 ![Employee List Dashboard](images/HR2.png)
 
-### License
-[Specify License Here]
-
 ## Conclusion
 The Human Resources Dashboard in Tableau provides a comprehensive view of workforce metrics, enabling HR teams to make informed, data-driven decisions. With interactive filters and visualizations, it offers flexibility to explore various HR insights efficiently.
